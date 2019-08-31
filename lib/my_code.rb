@@ -61,7 +61,7 @@ end
 
   describe "reduce_to_all_true returns false when any value is false" do
     it "reduces correctly" do
-      source_array = [1, 2, true, "razmatazz", false]
+      source_array = [1, 2, true, "razmatazz", nil]
       expect(reduce_to_all_true(source_array)).to be_falsy
     end
   end
