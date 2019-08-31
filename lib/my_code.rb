@@ -37,14 +37,14 @@ end
 #   total = starting_point 
 #   counter = 0 
 #   while counter < source_array.size do 
-#     total += source_arrayarray[counter]
+#     total += source_array[counter]
 #     counter += 1
 #   end
 #   total
 # end
 
 def reduce_to_all_true(source_array)
-  counter = log10
+  counter = 0
   while source_array.each do |element|
     if element != true
       break
