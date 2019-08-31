@@ -45,13 +45,15 @@ end
 
 def reduce_to_all_true(source_array)
   counter = 0
-  while source_array.each do |element|
+  while counter < source_array.size do
     if element != true
       break
       return false
     else 
       return true
   end
+  total
+end
 
 
 ###
