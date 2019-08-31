@@ -44,6 +44,7 @@ end
 # end
 
 def reduce_to_all_true(source_array)
+  counter = log10
   while source_array.each do |element|
     if element != true
       break
