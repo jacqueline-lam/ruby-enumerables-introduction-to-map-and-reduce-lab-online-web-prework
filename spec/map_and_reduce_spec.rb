@@ -57,17 +57,17 @@ describe 'my own reduce-like methods' do
     end
   end
 
-#   describe "reduce_to_any_true returns true when a truthy value is present" do
-#     it "reduces correctly" do
-#       source_array = [ false, nil, nil, nil, true]
-#       expect(reduce_to_any_true(source_array)).to eq(true)
-#     end
-#   end
+  describe "reduce_to_any_true returns true when a truthy value is present" do
+    it "reduces correctly" do
+      source_array = [ false, nil, nil, nil, true]
+      expect(reduce_to_any_true(source_array)).to eq(true)
+    end
+  end
 
-#   describe "reduce_to_any_true returns false when no truthy value is present" do
-#     it "reduces correctly" do
-#       source_array = [ false, nil, nil, nil]
-#       expect(reduce_to_any_true(source_array)).to eq(false)
-#     end
-#   end
+  describe "reduce_to_any_true returns false when no truthy value is present" do
+    it "reduces correctly" do
+      source_array = [ false, nil, nil, nil]
+      expect(reduce_to_any_true(source_array)).to eq(false)
+    end
+  end
 end
