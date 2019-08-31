@@ -44,10 +44,15 @@ end
 # end
 
 def reduce_to_all_true(source_array)
-  counter = 0
-  while counter < source_array.size do
-    return false if source_array[counter] != true
-    counter += 1
+  # counter = 0
+  # while counter < source_array.size do
+  #   return false if source_array[counter] != true
+  #   counter += 1
+  # end
+  # return true
+  
+  source_array.each do |item|
+    return false unless item
   end
   return true
 end
