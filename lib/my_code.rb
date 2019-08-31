@@ -52,7 +52,7 @@ def reduce_to_all_true(source_array)
     else 
       return true
   end
-  total
+  return true
 end
 
 
