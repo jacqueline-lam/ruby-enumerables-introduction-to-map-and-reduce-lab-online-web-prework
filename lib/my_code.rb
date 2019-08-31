@@ -38,7 +38,9 @@ end
 #   counter = 0 
 #   while counter < source_array.size do 
 #     total += source_arrayarray[counter]
-#   return total
+#     counter += 1
+#   end
+#   total
 # end
 
 def reduce_to_all_true(source_array)
