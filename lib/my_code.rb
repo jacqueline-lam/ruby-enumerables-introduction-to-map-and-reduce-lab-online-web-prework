@@ -52,7 +52,7 @@ def reduce_to_all_true(source_array)
   # return true
   
   source_array.each do |item|
-    return false unless item
+    return false if !(item)
   end
   return true
 end
