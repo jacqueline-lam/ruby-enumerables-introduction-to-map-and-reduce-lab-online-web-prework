@@ -51,5 +51,24 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  
+  source_array.each do |item|
+    return true if item
+  end
+  return false
 end
+
+
+##
+  describe "reduce_to_any_true returns true when a truthy value is present" do
+    it "reduces correctly" do
+      source_array = [ false, nil, nil, nil, true]
+      expect(reduce_to_any_true(source_array)).to eq(true)
+    end
+  end
+
+  describe "reduce_to_any_true returns false when no truthy value is present" do
+    it "reduces correctly" do
+      source_array = [ false, nil, nil, nil]
+      expect(reduce_to_any_true(source_array)).to eq(false)
+    end
+  end
