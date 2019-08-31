@@ -52,7 +52,7 @@ def reduce_to_all_true(source_array)
   # return true
   
   source_array.each do |item|
-    return false unless item # unless item is nil or false
+    return false unless item # unless item is nil or false (blank)
   end
   return true
 end
